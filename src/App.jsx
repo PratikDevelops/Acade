@@ -8,8 +8,8 @@ import logoImg from './assets/logo.png';
 import {sortPlacesByDistance} from "./loc.js"
 import { useEffect } from 'react';
 
-const storeId = JSON.parse(localStorage.getItem('selectedPlaces')) || [];
-    const storePlaces = storeId.map(id=> AVAILABLE_PLACES.find((place) => place.id === id))
+  const storeId = JSON.parse(localStorage.getItem('selectedPlaces')) || [];
+  const storePlaces = storeId.map(id=> AVAILABLE_PLACES.find((place) => place.id === id))
    
 
 function App() {
